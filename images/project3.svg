@@ -1,0 +1,23 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="proj3Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffc107;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff6b6b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="300" fill="url(#proj3Grad)" opacity="0.2"/>
+  
+  <!-- Portfolio icon -->
+  <circle cx="200" cy="150" r="80" fill="#fff" opacity="0.9"/>
+  
+  <!-- Palette -->
+  <path d="M 200 110 Q 230 110 240 130 Q 245 145 235 160 Q 220 175 200 175 Q 180 175 165 160 Q 155 145 160 130 Q 170 110 200 110 Z" fill="none" stroke="#ffc107" stroke-width="3"/>
+  
+  <!-- Color dots -->
+  <circle cx="190" cy="135" r="6" fill="#ff6b6b"/>
+  <circle cx="210" cy="135" r="6" fill="#ffc107"/>
+  <circle cx="200" cy="150" r="6" fill="#28a745"/>
+  <circle cx="185" cy="155" r="6" fill="#007bff"/>
+  <circle cx="215" cy="155" r="6" fill="#764ba2"/>
+</svg>

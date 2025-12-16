@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site web responsive et performant - TP Final B2">
+    <meta name="theme-color" content="#007bff">
+    <title>Portfolio Responsive - TP Performance</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" as="style" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Fonts - optimized loading -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header avec navigation responsive -->
+    <header class="header" id="header">
+        <nav class="navbar" aria-label="Navigation principale">
+            <div class="container">
+                <a href="#" class="logo" aria-label="Retour à l'accueil">
+                    <span class="logo-text">Portfolio</span>
+                </a>
+                
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                    <li><a href="#a-propos" class="nav-link">À propos</a></li>
+                    <li><a href="#projets" class="nav-link">Projets</a></li>
+                    <li><a href="#competences" class="nav-link">Compétences</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Bienvenue sur mon <span class="highlight">Portfolio</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Développeur Web passionné par la création d'expériences utilisateur performantes et responsives
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-illustration.svg" alt="Illustration hero" loading="lazy" width="600" height="600">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section class="about" id="a-propos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">À propos de moi</h2>
+                <p class="section-subtitle">Découvrez mon parcours et mes passions</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/profile.svg" alt="Photo de profil" loading="lazy" width="400" height="400">
+                </div>
+                <div class="about-text">
+                    <h3>Développeur Full Stack</h3>
+                    <p>
+                        Passionné par le développement, je crée des sites et applications 
+                        web modernes, performants et accessibles.
+                    </p>
+                    <p>
+                        Spécialisé en Go, Python, JavaScript et frameworks modernesn, je
+                        prêt à travailler sur n'importe qu'elle projet dans ces langages.
+                    </p>
+                    <ul class="skills-list">
+                        <li>✓ Responsive Design</li>
+                        <li>✓ Optimisation des performances</li>
+                        <li>✓ Accessibilité web (WCAG)</li>
+                        <li>✓ SEO technique</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section class="projects" id="projets">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mes Projets</h2>
+                <p class="section-subtitle">Une sélection de mes réalisations récentes</p>
+            </div>
+            
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/project1.svg" alt="Projet 1" loading="lazy" width="400" height="300">
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Responsive</h3>
+                        <p>Plateforme e-commerce complète avec panier, paiement sécurisé et interface responsive.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API REST</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/project2.svg" alt="Projet 2" loading="lazy" width="400" height="300">
+                    </div>
+                    <div class="project-content">
+                        <h3>Application de Gestion</h3>
+                        <p>Dashboard interactif pour la gestion de données avec graphiques et statistiques en temps réel.</p>
+                        <div class="project-tags">
+                            <span class="tag">SQL</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">React</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/project3.svg" alt="Projet 3" loading="lazy" width="400" height="300">
+                    </div>
+                    <div class="project-content">
+                        <h3>Groupie-Tracker</h3>
+                        <p>Site de musique où on répèretorie les musiques d'artistes avec leurs dates et leurs concerts dans le monde.</p>
+                        <div class="project-tags">
+                            <span class="tag">Go</span>
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">React</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section class="skills" id="competences">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Compétences Techniques</h2>
+                <p class="section-subtitle">Technologies et outils que je maîtrise</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="8" fill="#00ADD8"/>
+                            <text x="10" y="32" font-family="Arial" font-weight="bold" font-size="20" fill="white">Go</text>
+                        </svg>
+                    </div>
+                    <h3>Go</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 88%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="8" fill="#3776AB"/>
+                            <text x="13" y="30" font-family="Arial" font-weight="bold" font-size="18" fill="white">Py</text>
+                        </svg>
+                    </div>
+                    <h3>Python</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="8" fill="#F7DF1E"/>
+                            <text x="9" y="33" font-family="Arial" font-weight="bold" font-size="24" fill="#000">JS</text>
+                        </svg>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 88%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="8" fill="#E34F26"/>
+                            <path d="M24 36L14 33L12 12H36L34 33L24 36Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <h3>HTML</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="8" fill="#1572B6"/>
+                            <path d="M24 36L14 33L12 12H36L34 33L24 36Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <h3>CSS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 92%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="48" height="48" rx="8" fill="#000"/>
+                            <path d="M24 12L32 18L32 30L24 36L16 30L16 18L24 12Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <h3>Git</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contactez-moi</h2>
+                <p class="section-subtitle">N'hésitez pas à me contacter pour discuter de vos projets</p>
+            </div>
+            
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" name="name" required placeholder="Votre nom">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Sujet de votre message">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Votre message..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                </form>
+                
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">📧</div>
+                        <h4>Email</h4>
+                        <p>contact@portfolio.com</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">📱</div>
+                        <h4>Téléphone</h4>
+                        <p>+33 6 04 89 04 45</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h4>Localisation</h4>
+                        <p>Paris, France</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">💼</div>
+                        <h4>LinkedIn</h4>
+                        <p>linkedin.com/in/Pierre</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Portfolio</h4>
+                    <p>Site web responsive et performant créé avec passion.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#a-propos">À propos</a></li>
+                        <li><a href="#projets">Projets</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Réseaux Sociaux</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="GitHub">GitHub</a>
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Portfolio</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bouton retour en haut -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Retour en haut">
+        ↑
+    </button>
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+</body>
+</html>
